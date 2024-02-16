@@ -3,6 +3,7 @@
   --brand: #ffffff;
   --size: #666666;
   --section-space: 100px;
+  --row: #333333;
 }
 
 body {
@@ -22,19 +23,6 @@ h5,
 h6 {
   margin: 0;
 }
-
-h1 {
-  color: var(--content);
-  font-size: 64px;
-  line-height: auto;
-}
-
-p {
-  font-size: 20px;
-  line-height: 120px;
-  color: var(--size);
-}
-
 a {
   text-decoration: none;
   display: block;
@@ -48,9 +36,9 @@ img {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  align-items: center;
-  text-align: center;
+}
+.container {
+  display: flex;
 }
 
 .header {
@@ -60,29 +48,48 @@ img {
   display: block;
   width: 280px;
   height: 563px;
-  text-align: justify;
 }
 
-.img {
-  padding: 70px 81px 79px;
-}
-
-.social {
+.header .container {
   display: flex;
-  column-gap: 10px;
-  padding-left: 65px;
-  margin: 24px;
-}
-.menu a {
-  margin: 25px;
-  padding-left: 100px;
-  color: var(--brand);
-  display: flex;
-}
-.content {
-  background-color: var(--brand);
-  margin-top: var(--section-space);
-  margin-bottom: var(--section-space);
-  display: flex;
+  justify-content: center;
   align-items: center;
+}
+.img {
+  padding: 79px 81px 135px;
+}
+
+.selo {
+  cursor: pointer;
+  display: flex;
+  column-gap: 5px;
+  text-decoration: none;
+}
+
+.menu a {
+  text-align: center;
+  color: var(--brand);
+  margin: 20px;
+}
+.content{
+  padding: 175px 50px;
+}
+.content h1 {
+  color: var(--content);
+  font-size: 64px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.content h2 {
+  font-size: 32px;
+  color: #333333;
+  font-weight: auto;
+  font-family: "Roboto", sans-serif;
+  padding: 4px;
+}
+.content p {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  color: var(--size);
+  padding: 4px;
 }
