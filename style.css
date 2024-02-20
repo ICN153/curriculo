@@ -32,44 +32,33 @@ img {
 }
 
 .container {
-  width: 1140px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-.container {
   display: flex;
-}
-
-.header {
-  background-color: var(--content);
-  padding-top: 18px;
-  padding-bottom: 18px;
-  display: block;
-  width: 280px;
-  height: 605px;
-}
-
-.header .container {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
-.img {
-  padding: 79px 81px 135px;
+
+.sidebar {
+  background-color: var(--content);    
+  width: 280px;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.selo {
+
+.redes-sociais {
   cursor: pointer;
   display: flex;
-  column-gap: 5px;
-  text-decoration: none;
+  column-gap: 15px;
+  text-decoration: none; 
 }
 
 .menu a {
   text-align: center;
   color: var(--brand);
-  margin: 20px;
+  margin: 30px;
 }
 .content{
   padding: 175px 50px;
